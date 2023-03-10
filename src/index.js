@@ -75,20 +75,26 @@ function deleteSV() {
   console.log(students);
 }
 // deleteSV();
-const luachon = 1;
-switch (luachon) {
-  case 1:
-    hienthi();
-    break;
-  case 2:
-    addSV();
-    break;
-  case 3:
-    updateSV();
-    break;
-  case 4:
-    deleteSV();
-    break;
-  default:
-    console.log("Nhập lại dữ liệu");
+
+const button_submit = document.getElementsByClassName("button_submit");
+
+function menu() {
+  const luachon = document.getElementById("input_menu").value;
+  console.log(luachon);
+  switch (parseInt(luachon)) {
+    case 1:
+      hienthi();
+      break;
+    case 2:
+      addSV();
+      break;
+    case 3:
+      updateSV();
+      break;
+    case 4:
+      deleteSV();
+      break;
+    default:
+      console.log("Nhập lại dữ liệu");
+  }
 }

@@ -2,24 +2,29 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Athena Training</title>
+    <title>Menu sv</title>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div id="div_all">
-      <div id="div_left">
-        <div id="formlogin">
-          <div>
-            <input />
-            <label for="input_user"></label>
-          </div>
-          <br />
-        </div>
+    <div>
+      <div>
+        == QUẢN LÝ SINH VIÊN == <br />
+        1. Xem danh sách sinh viên <br />
+        2. Thêm sinh viên <br />
+        3.Sửa sinh viên <br />
+        4. Xóa sinh viên
       </div>
-      <div id="div_right">
-        <div id="formnote"></div>
-      </div>
+      <div>Nhập dữ liệu vào bên dưới để lựa chọn:</div>
+      <input type="text" id="input_menu" />
+      <br />
+      <button
+        class="button_submit"
+        style="width: 80px; height: 20px"
+        onclick="menu()"
+      >
+        Thực hiện
+      </button>
     </div>
-    <script type="module" src="src/index.js"></script>
+    <script type="text/javascript" src="./src/index.js"></script>
   </body>
 </html>
